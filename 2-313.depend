@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1590348384 source:c:\users\пользователь\desktop\c-projects\2-313\main.cpp
+	<iostream>
+	"transport.h"
+	"func.h"
+
+1590349728 source:c:\users\пользователь\desktop\c-projects\2-313\func.cpp
+	"func.h"
+	"transport.h"
+
+1590349661 c:\users\пользователь\desktop\c-projects\2-313\func.h
+	"transport.h"
+
+1590172936 c:\users\пользователь\desktop\c-projects\2-313\transport.h
+	<iostream>
+	<cstring>
+
