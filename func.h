@@ -1,7 +1,10 @@
 #ifndef FUNC_H_INCLUDED
 #define FUNC_H_INCLUDED
 
-#include "transport.h"
+#include "light_car.h"
+#include "bus.h"
+#include "plane.h"
+#include "steamboat.h"
 
 int show_lc(light_car *lc, int n);
 int show_bu(bus *bu, int n);

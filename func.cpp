@@ -1,5 +1,4 @@
 #include "func.h"
-#include "transport.h"
 
 int show_lc(light_car *lc, int n)
 {

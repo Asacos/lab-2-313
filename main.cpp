@@ -1,5 +1,8 @@
 #include <iostream>
-#include "transport.h"
+#include "light_car.h"
+#include "bus.h"
+#include "plane.h"
+#include "steamboat.h"
 #include "func.h"
 
 using namespace std;
