@@ -4,9 +4,23 @@
 #include <iostream>
 #include <cstring>
 
-void SetTransport(int _st, int _sp);
-int GetSeat();
-int GetSpeed();
-void print();
+using namespace std;
+
+class transport
+{
+private:
+    int seat_place;
+    int speed;
+protected:
+    transport(int seat_place,int speed);
+public:
+    transport();
+
+    int getSeat() const;
+    int getSpeed() const;
+
+    bool setSeat(int seat_place);
+    bool setSpeed(int speed);
+};
 
 #endif // TRANSPORT_H_INCLUDED

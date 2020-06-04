@@ -3,8 +3,17 @@
 
 #include "transport.h"
 
-void SetSteamboat (int _dp);
-int GetDis();
-void print();
+class steamboat : public transport
+{
+private:
+    int displacement;
+public:
+    steamboat(int seat_place, int speed, int displacement);
+
+    int getDisp() const;
+    bool setDisp(int displacement);
+
+    void steamboatPrint() const;
+};
 
 #endif // STEAMBOAT_H_INCLUDED

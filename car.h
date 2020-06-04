@@ -3,8 +3,17 @@
 
 #include "transport.h"
 
-void SetCar(char* _md);
-char* GetModel();
-void print();
+class car : public transport
+{
+private:
+    string model;
+public:
+    car(int seat_place, int speed, string model);
+
+    string getModel() const;
+    bool setModel(string model);
+
+    void carPrint() const;
+};
 
 #endif // CAR_H_INCLUDED

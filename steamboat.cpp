@@ -2,37 +2,20 @@
 
 using namespace std;
 
-class steamboat : public transport
-{
-private:
-    int displacement;
-public:
+  steamboat::steamboat(int seat_place, int speed, int displacement):transport(seat_place, speed){}
 
-    steamboat()
+    bool steamboat::setDisp(int displacement)
     {
-        displacement=0;
+        this->displacement=displacement;
+        return true;
     }
 
-    steamboat(const steamboat &sb)
-    {
-        displacement=sb.displacement;
-    }
-
-
-    void SetSteamboat (int _dp)
-    {
-        this->displacement=_dp;
-    }
-
-    int GetDis() const
+    int steamboat::getDisp() const
     {
         return displacement;
     }
 
-    void print() const override //warn
+    void steamboat::steamboatPrint() const
     {
-        cout<<"Seat places:"<<GetSeat()<<endl<<"Speed:"<<GetSpeed()<<"Displacement:"<<GetDis()<<endl;
+        cout<<"Seat places:"<<getSeat()<<endl<<"Speed:"<<getSpeed()<<endl<<"Displacement:"<<getDisp()<<endl;
     }
-
-    ~steamboat(){}
-};

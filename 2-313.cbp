@@ -36,8 +36,6 @@
 		<Unit filename="bus.h" />
 		<Unit filename="car.cpp" />
 		<Unit filename="car.h" />
-		<Unit filename="func.cpp" />
-		<Unit filename="func.h" />
 		<Unit filename="light_car.cpp" />
 		<Unit filename="light_car.h" />
 		<Unit filename="main.cpp" />

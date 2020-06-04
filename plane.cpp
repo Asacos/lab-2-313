@@ -2,37 +2,20 @@
 
 using namespace std;
 
-class plane : public transport
-{
-private:
-    int time;
-public:
+plane::plane(int seat_place, int speed, int time):transport(seat_place, speed){}
 
-    plane()
+    bool plane::setTime(int time)
     {
-        time=0;
+        this->time=time;
+        return true;
     }
 
-    plane(const plane &pl)
-    {
-        time=pl.time;
-    }
-
-
-    void SetPlane (int _ti)
-    {
-        this->time=_ti;
-    }
-
-    int GetTime() const
+    int plane::getTime() const
     {
         return time;
     }
 
-    void print() const override //warn
+    void plane::planePrint() const
     {
-        cout<<"Seat places:"<<GetSeat()<<endl<<"Speed:"<<GetSpeed()<<"Time"<<GetTime()<<endl;
+        cout<<"Seat places:"<<getSeat()<<endl<<"Speed:"<<getSpeed()<<endl<<"Time:"<<getTime()<<endl;
     }
-
-    ~plane(){}
-};

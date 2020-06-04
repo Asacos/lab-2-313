@@ -2,16 +2,9 @@
 
 using namespace std;
 
-class light_car : public car
-{
-    public:
+light_car::light_car(int seat_place, int speed, string model):car(seat_place, speed, model){}
 
-        light_car(){}
-
-    void print() const override
-        {
-            cout<<"Seat places:"<<GetSeat()<<endl<<"Speed:"<<GetSpeed()<<endl<<"Model:"<<GetModel()<<endl;
-        }
-
-    ~light_car(){}
-};
+    void light_car::light_carPrint() const
+    {
+        cout<<"Seat places:"<<getSeat()<<endl<<"Speed:"<<getSpeed()<<endl<<"Model:"<<getModel()<<endl;
+    }

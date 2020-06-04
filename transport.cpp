@@ -2,43 +2,35 @@
 
 using namespace std;
 
-class transport
+transport::transport()
 {
-private:
-    int seat_place;
-    int speed;
-public:
-
-    transport()
+    seat_place=0;
+    speed=0;
+}
+transport::transport(int seat_place, int speed):transport()
     {
-        seat_place=0;
-        speed=0;
+        setSeat(seat_place);
+        setSpeed(speed);
     }
 
-    transport(const transport &tr)
-    {
-        seat_place=tr.seat_place;
-        speed=tr.speed;
-    }
-
-    void SetTransport(int _st, int _sp)
-    {
-        this->seat_place=_st;
-        this->speed=_sp;
-    }
-
-    int GetSeat() const
+    int transport::getSeat() const
     {
         return seat_place;
     }
 
-    int GetSpeed() const
+    int transport::getSpeed() const
     {
         return speed;
     }
 
-    virtual void print() const
+    bool transport::setSeat(int seat_place)
     {
-        cout<<"Seat places:"<<GetSeat()<<endl<<"Speed:"<<GetSpeed()<<endl;
+        this->seat_place=seat_place;
+        return true;
     }
-};
+
+    bool transport::setSpeed(int speed)
+    {
+        this->speed=speed;
+        return true;
+    }

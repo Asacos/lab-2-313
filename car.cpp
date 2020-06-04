@@ -2,35 +2,21 @@
 
 using namespace std;
 
-class car : public transport
-{
-private:
-    char* model;
-public:
+    car::car(int seat_place, int speed, string model):transport(seat_place, speed){}
 
-    car()
+    bool car::setModel(string model)
     {
-         model=new char[10];
+        this->model=model;
+        return true;
     }
 
-    void SetCar(char* _md)
-    {
-        int len=strlen(_md);
-        this->model=new char[len];
-        strcpy(this->model,_md);
-    }
-
-    car(const car &c)
-    {
-        model=c.model;
-    }
-
-    char* GetModel() const
+    string car::getModel() const
     {
         return model;
     }
-    virtual void print() const override
+
+    void car::carPrint() const
     {
-        cout<<"Seat places:"<<GetSeat()<<endl<<"Speed:"<<GetSpeed()<<endl<<"Model:"<<GetModel()<<endl;
+        cout<<"Seat places:"<<getSeat()<<endl<<"Speed:"<<getSpeed()<<endl<<"Model:"<<getModel()<<endl;
     }
-};
+

@@ -3,6 +3,11 @@
 
 #include "transport.h"
 
-void print();
+class bus : public transport
+{
+public:
+    bus(int seat_place, int speed);
+    void busPrint() const;
+};
 
 #endif // BUS_H_INCLUDED

@@ -2,16 +2,11 @@
 
 using namespace std;
 
-class bus : public transport
-{
-public:
+bus::bus(int seat_place, int speed):transport(seat_place, speed){}
 
-    bus(){}
-
-    void print() const override
+    void bus::busPrint() const
     {
-        cout<<"Seat places:"<<GetSeat()<<endl<<"Speed:"<<GetSpeed()<<endl;
+        cout<<"Seat places:"<<getSeat()<<endl<<"Speed:"<<getSpeed()<<endl;
     }
 
-    ~bus(){}
-};
+

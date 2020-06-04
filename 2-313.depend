@@ -15,3 +15,40 @@
 	<iostream>
 	<cstring>
 
+1591312505 source:c:\users\пользователь\desktop\2-313\bus.cpp
+	"bus.h"
+
+1591310037 c:\users\пользователь\desktop\2-313\bus.h
+	"transport.h"
+
+1591310038 c:\users\пользователь\desktop\2-313\transport.h
+	<iostream>
+	<cstring>
+
+1591312505 source:c:\users\пользователь\desktop\2-313\car.cpp
+	"car.h"
+
+1591310038 c:\users\пользователь\desktop\2-313\car.h
+	"transport.h"
+
+1591312505 source:c:\users\пользователь\desktop\2-313\light_car.cpp
+	"light_car.h"
+
+1591310038 c:\users\пользователь\desktop\2-313\light_car.h
+	"car.h"
+
+1591312505 source:c:\users\пользователь\desktop\2-313\plane.cpp
+	"plane.h"
+
+1591310037 c:\users\пользователь\desktop\2-313\plane.h
+	"transport.h"
+
+1591312505 source:c:\users\пользователь\desktop\2-313\steamboat.cpp
+	"steamboat.h"
+
+1591310037 c:\users\пользователь\desktop\2-313\steamboat.h
+	"transport.h"
+
+1591312650 source:c:\users\пользователь\desktop\2-313\transport.cpp
+	"transport.h"
+
